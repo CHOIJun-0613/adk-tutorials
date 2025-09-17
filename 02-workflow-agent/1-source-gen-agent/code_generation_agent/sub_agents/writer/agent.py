@@ -19,7 +19,7 @@ INSTRUCTION = """
 
  # AI Provider Manager를 사용하여 현재 설정된 Provider에 맞는 LLM 생성
 try:
-    llm = ai_provider_manager.create_llm(provider_name="lm_studio")
+    llm = ai_provider_manager.create_llm(provider_name="lmstudio", model_name="lm_studio/qwen/qwen3-8b")
     provider_info = ai_provider_manager.get_provider_info()
     print(f"\n[bold blue]🤖 AI Provider: {provider_info['provider']}[/bold blue]")
     print(f"[bold blue]📱 모델: {provider_info['model']}[/bold blue]")
